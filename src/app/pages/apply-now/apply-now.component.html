@@ -1,0 +1,50 @@
+<div style="background-image: url(assets/images/london.jpg); background-size: 100%; text-align: center;
+  vertical-align: middle;
+  line-height: 600px;
+  background-position: center;
+  height: 600px;
+  animation: shrink 10s infinite alternate;
+  ">
+  <!-- <h1 class="strong" style="padding-top: 300px; color: white">Apply Now</h1> -->
+  <h1 class="title" style="padding-top: 300px;">
+    <span class="title-part line-1">Apply Now</span>
+  </h1>
+</div>
+
+
+<div style="color: black; text-align: center; margin-top: 60px">FILL UP THE FORM.</div>
+<h1 style="color: black; text-align: center; margin-top: 30px; ">We’d love to chat about your business.</h1>
+<form>
+  <label style="color: black;">First Name:</label>
+  <input name="firstName" [(ngModel)]="application.firstName" type="text" class="feedback-input"
+    placeholder="First Name" />
+  <label>Last Name:</label>
+  <input name="lastName" [(ngModel)]="application.lastName" type="text" class="feedback-input"
+    placeholder="Last Name" />
+  <input name="dateOfBirth" [(ngModel)]="application.dateOfBirth" type="text" class="feedback-input"
+    placeholder="Date Of Birth (DD/MM/YYYY)" />
+  <input name="phoneNumber" [(ngModel)]="application.phoneNumber" type="text" class="feedback-input"
+    placeholder="Phone Number (Including country code)" />
+  <input name="email" [(ngModel)]="application.email" type="text" class="feedback-input" placeholder="Email" />
+  <input name="country" [(ngModel)]="application.country" type="text" class="feedback-input" placeholder="Country" />
+  <input name="city" [(ngModel)]="application.city" type="text" class="feedback-input" placeholder="City" />
+  <input name="previousUniversity" [(ngModel)]="application.previousUniversity" type="text" class="feedback-input"
+    placeholder="Current/Previous School or University" />
+  <input name="course" [(ngModel)]="application.course" type="text" class="feedback-input"
+    placeholder="Course You Would Like To Study" />
+  <select name="referencedBy" class="feedback-input" [(ngModel)]="application.referencedBy"
+    placeholder="How did you hear about us">
+    <option value="" selected>How did you hear about us?</option>
+    <option value="INSTAGRAM">Instagram</option>
+    <option value="FACEBOOK">Facebook</option>
+    <option value="TWITTER">Twitter</option>
+    <option value="GOOGLE">Google</option>
+    <option value="POSTER">Flyer/Poster</option>
+    <option value="COUNSELLOR">School Counsellor</option>
+    <option value="PERSON">Family/Friend referral</option>
+  </select>
+  <span style="margin-top: 20px;">By clicking Submit, you consent to your data being handled as per Cross Abroad's
+    Privacy Policy. Click here
+    to view. </span>
+  <input type="button" (click)="store()" value="SUBMIT" style="margin-top: 20px;" />
+</form>

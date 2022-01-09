@@ -1,0 +1,55 @@
+<div style="background-image: url(assets/images/slider-istanbul.jpg); background-size: 100%; text-align: center;
+  vertical-align: middle;
+  line-height: 600px;
+  background-position: center;
+  height: 600px;
+  ">
+  <!-- <h1 class="strong title" style="padding-top: 300px; color: white">Contact Us</h1> -->
+  <h1 class="title" style="padding-top: 300px;">
+    <span class="title-part line-1">Contact Us</span>
+  </h1>
+</div>
+
+<div class="fh5co-contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h3>Contact Info.</h3>
+        <ul class="contact-info">
+          <li><i class="icon-map"></i>Hadat, Beirut, Lebanon</li>
+          <li><i class="icon-phone"></i>+961 76 06 30 32</li>
+          <li><i class="icon-envelope"></i><a href="#">info@crossabroad.com</a></li>
+        </ul>
+      </div>
+      <div class="col-md-8 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input class="form-control" name="name" [(ngModel)]="message.name" placeholder="Name" type="text">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input class="form-control" placeholder="Email" name="email" [(ngModel)]="message.email" type="text">
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <textarea name="message" [(ngModel)]="message.message" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <button class="btn btn-primary" type="button" (click)="send()" [disabled]="isSending">
+                <span *ngIf="isSending" ><img src="{{loadingGifUrl}}" width="20" ></span>
+                <span *ngIf="!isSending" >Send Message</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-apply-now-card></app-apply-now-card>

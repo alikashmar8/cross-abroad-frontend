@@ -1,0 +1,9 @@
+export enum ApplicationReference {
+  INSTAGRAM = 'INSTAGRAM',
+  FACEBOOK = 'FACEBOOK',
+  TWITTER = 'TWITTER',
+  GOOGLE = 'GOOGLE',
+  POSTER = 'POSTER',
+  COUNSELLOR = 'COUNSELLOR',
+  PERSON = 'PERSON',
+}

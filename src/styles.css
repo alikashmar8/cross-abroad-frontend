@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+/* for desktop */
+.whatsapp_float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.whatsapp-icon {
+  margin-top: 16px;
+}
+
+/* for mobile */
+@media screen and (max-width: 767px) {
+  .whatsapp-icon {
+    margin-top: 10px;
+  }
+
+  .whatsapp_float {
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 10px;
+    font-size: 22px;
+  }
+}
+
+@keyframes shrink {
+  0% {
+    background-size: 115% 115%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+.title {
+  font-size: 4vw;
+}
+.title .title-part {
+  font-weight: 600;
+  text-transform: uppercase;
+  display: block;
+  color: #ffffd9;
+}
+.title .title-part.line-1 {
+  text-shadow: #020201 1px 1px, #040402 2px 2px, #060603 3px 3px
+}
