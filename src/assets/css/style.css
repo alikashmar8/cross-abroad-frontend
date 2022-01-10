@@ -1391,6 +1391,16 @@ h1, h2, h3, h4, h5, h6, figure {
 
 /*# sourceMappingURL=style.css.map */
 
+
+.header-logo{
+  max-width: 50%; margin-top: -25%;
+}
+
+
+@media screen and (max-width: 900px) {
+  .header-logo{
+    max-width: 20%; margin-top: -15%;  }
+}
 /* custom css */
 
 .primary-bg{
