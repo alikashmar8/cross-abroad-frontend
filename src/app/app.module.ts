@@ -19,6 +19,7 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { FaqComponent } from './pages/faq/faq.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PartnersComponent } from './pages/partners/partners.component';
+import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { PartnersComponent } from './pages/partners/partners.component';
     ApplyNowComponent,
     PartnersComponent,
     FaqComponent,
+    PrivacyPolicyComponent,
   ],
   imports: [
     BrowserModule,

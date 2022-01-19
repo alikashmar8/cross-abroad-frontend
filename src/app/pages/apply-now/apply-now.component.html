@@ -2,23 +2,25 @@
   vertical-align: middle;
   line-height: 600px;
   background-position: center;
-  height: 600px;
   animation: shrink 10s infinite alternate;
-  ">
+  "
+  class="hero-background"
+  >
   <!-- <h1 class="strong" style="padding-top: 300px; color: white">Apply Now</h1> -->
-  <h1 class="title" style="padding-top: 300px;">
-    <span class="title-part line-1">Apply Now</span>
+  <h1 class="title hero-text">
+    <h2
+    style="text-shadow: #020201 1px 1px, #040402 2px 2px; font-size: 50px; font-weight: 200!important; font-family: 'system-ui'; color: #fff">
+    Your story begins here! </h2>
+    <span class="title-part line-1">Register Now</span>
   </h1>
 </div>
 
-
+<div class="container">
 <div style="color: black; text-align: center; margin-top: 60px">FILL UP THE FORM.</div>
-<h1 style="color: black; text-align: center; margin-top: 30px; ">We’d love to chat about your business.</h1>
+<h1 style="color: black; text-align: center; margin-top: 30px; animation: slideToRight 5s ;">Inhale your future, Exhale your past.</h1>
 <form>
-  <label style="color: black;">First Name:</label>
   <input name="firstName" [(ngModel)]="application.firstName" type="text" class="feedback-input"
     placeholder="First Name" />
-  <label>Last Name:</label>
   <input name="lastName" [(ngModel)]="application.lastName" type="text" class="feedback-input"
     placeholder="Last Name" />
   <input name="dateOfBirth" [(ngModel)]="application.dateOfBirth" type="text" class="feedback-input"
@@ -48,3 +50,4 @@
     to view. </span>
   <input type="button" (click)="store()" value="SUBMIT" style="margin-top: 20px;" />
 </form>
+</div>
