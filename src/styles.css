@@ -45,10 +45,10 @@
 
 @keyframes slideToRight {
   0% {
-    margin-left: -100px
+    margin-left: -100px;
   }
   100% {
-    margin-left: 0px
+    margin-left: 0px;
   }
 }
 
@@ -59,45 +59,65 @@
   font-weight: 500;
   text-transform: none;
   display: block;
-  color: #ffffd9;
+  color: #ffffff;
 }
 .title .title-part.line-1 {
-  text-shadow: #020201 1px 1px, #040402 2px 2px, #060603 3px 3px
+  text-shadow: #020201 1px 1px, #040402 2px 2px, #060603 3px 3px;
 }
 
 @media screen and (max-width: 768px) {
   .title .title-part.line-1 {
     text-shadow: #020201 1px 1px, #040402 2px 2px, #060603 3px 3px;
-    padding-bottom: 100px!important;
+    padding-bottom: 100px !important;
   }
 }
 
-
-.hero-background{
-  height: 600px!important;
+.hero-background {
+  height: 600px !important;
 }
 
 @media screen and (max-width: 767px) {
-  .hero-background{
+  /* .hero-background{
     height: auto!important;
+  } */
+  .hero-background {
+    height: 250px !important;
+  }
+  .title {
+    font-size: 7vw;
   }
 }
 
-.slider-background{}
+.slider-background {
+}
 
 @media screen and (max-width: 767px) {
-  .slider-background{
-    height: 450px!important;
-    min-height: 300px!important;
+  .slider-background {
+    height: 300px !important;
+    min-height: 300px !important;
   }
 }
 
-.hero-text{
-  padding-top: 300px!important;
+.hero-text {
+  padding-top: 300px !important;
 }
 
 @media screen and (max-width: 767px) {
-  .hero-text{
-    padding-top: 200px!important;
+  .hero-text {
+    padding-top: 100px !important;
+  }
+}
+
+.hero-quote {
+  text-shadow: #020201 1px 1px, #040402 2px 2px;
+  font-size: 50px;
+  font-weight: 200 !important;
+  font-family: "system-ui";
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .hero-quote{
+    font-size: 23px!important;
   }
 }
