@@ -25,6 +25,8 @@ body {
   height: 100%;
   position: relative;
   margin-top: -20px;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -284,7 +286,7 @@ figure {
   *display: inline;
 }
 .fh5co-social li a {
-  font-size: 22px;
+  font-size: 30px;
   color: #fff;
   padding: 0;
   margin: 0;

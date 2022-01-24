@@ -74,14 +74,13 @@
 
 .hero-background {
   height: 600px !important;
+  animation: shrink 10s infinite alternate;
 }
 
 @media screen and (max-width: 767px) {
-  /* .hero-background{
-    height: auto!important;
-  } */
   .hero-background {
-    height: 250px !important;
+    height: 200px !important;
+    animation: shrink 999999s 1 alternate;
   }
   .title {
     font-size: 7vw;
@@ -89,10 +88,12 @@
 }
 
 .slider-background {
+  animation: shrink 7s infinite alternate;
 }
 
 @media screen and (max-width: 767px) {
   .slider-background {
+    animation: none;
     height: 300px !important;
     min-height: 300px !important;
   }
@@ -104,7 +105,7 @@
 
 @media screen and (max-width: 767px) {
   .hero-text {
-    padding-top: 100px !important;
+    padding-top: 75px !important;
   }
 }
 
@@ -118,6 +119,6 @@
 
 @media screen and (max-width: 767px) {
   .hero-quote{
-    font-size: 23px!important;
+    font-size: 20px!important;
   }
 }

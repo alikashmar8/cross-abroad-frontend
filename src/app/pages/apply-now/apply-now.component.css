@@ -43,3 +43,17 @@ textarea {
   font-weight:700;
 }
 [type="button"]:hover { background:#00a6ff; }
+
+
+select {
+  color: #757581!important;
+}
+option:not(:first-of-type) {
+  color: black!important;
+}
+select {
+  color: black;
+}
+select:focus {
+  color: black!important;
+}

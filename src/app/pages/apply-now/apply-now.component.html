@@ -2,7 +2,6 @@
   vertical-align: middle;
   line-height: 600px;
   background-position: center;
-  animation: shrink 10s infinite alternate;
   " class="hero-background">
   <!-- <h1 class="strong" style="padding-top: 300px; color: white">Apply Now</h1> -->
   <h1 class="title hero-text">
@@ -14,7 +13,9 @@
 
 <div class="container">
   <div style="color: black; text-align: center; margin-top: 60px">FILL UP THE FORM.</div>
-  <h1 style="color: black; text-align: center; margin-top: 30px; animation: slideToRight 5s; text-transform: uppercase;">Inhale your future,
+  <h1
+    style="color: black; text-align: center; margin-top: 30px; animation: slideToRight 5s; text-transform: uppercase;">
+    Inhale your future,
     Exhale your past.</h1>
   <form>
     <input name="firstName" [(ngModel)]="application.firstName" type="text" class="feedback-input"
@@ -33,19 +34,26 @@
     <input name="course" [(ngModel)]="application.course" type="text" class="feedback-input"
       placeholder="Course You Would Like To Study" />
     <select name="referencedBy" class="feedback-input" [(ngModel)]="application.referencedBy"
-      placeholder="How did you hear about us"  >
+      placeholder="How did you hear about us"
+      class="feedback-input form-item__element--select"
+      required
+      >
       <option value=null selected disabled>How did you hear about us?</option>
       <option value="INSTAGRAM">Instagram</option>
       <option value="FACEBOOK">Facebook</option>
       <option value="TWITTER">Twitter</option>
       <option value="GOOGLE">Google</option>
       <option value="POSTER">Flyer/Poster</option>
-      <option value="COUNSELLOR">School Counsellor</option>
+      <option value="COUNSELLOR">School Counselor</option>
       <option value="PERSON">Family/Friend referral</option>
     </select>
     <span style="margin-top: 20px;">By clicking Submit, you consent to your data being handled as per Cross Abroad's
       Privacy Policy. Click here
       to view. </span>
-    <input type="button" (click)="store()" value="SUBMIT" style="margin-top: 20px;" />
+      <button class="btn btn-primary" style="margin-top: 20px;"  type="button" (click)="store()" [disabled]="isSending">
+        <span *ngIf="isSending"><img src="{{loadingGifUrl}}" width="20"></span>
+        <span *ngIf="!isSending">Submit</span>
+      </button>
+    <!-- <input type="button" (click)="store()" value="SUBMIT" /> -->
   </form>
 </div>

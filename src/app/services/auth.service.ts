@@ -17,7 +17,6 @@ export class AuthService {
   ) {}
 
   handleHttpError(err: HttpErrorResponse) {
-    debugger;
     switch (err.error.statusCode) {
       case 404:
       case 400:
@@ -34,7 +33,10 @@ export class AuthService {
             );
         break;
       default:
-        debugger;
+        this.alertService.toastNotification(
+          'Unexpected error, please try again later',
+          DialogLayoutDisplay.DANGER
+        );
         break;
     }
   }
