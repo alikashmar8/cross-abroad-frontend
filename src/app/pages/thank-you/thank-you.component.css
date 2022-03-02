@@ -1,0 +1,13 @@
+.welcome-box {
+  justify-content: center !important;
+  width: fit-content;
+  padding: 50px;
+  background-color: white;
+  border-radius: 30px;
+}
+
+@media (max-width: 600px) {
+  .welcome-box {
+    width: 80%;
+  }
+}

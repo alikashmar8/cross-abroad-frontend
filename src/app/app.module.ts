@@ -20,6 +20,7 @@ import { FaqComponent } from './pages/faq/faq.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PartnersComponent } from './pages/partners/partners.component';
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
+import { ThankYouComponent } from './pages/thank-you/thank-you.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.co
     PartnersComponent,
     FaqComponent,
     PrivacyPolicyComponent,
+    ThankYouComponent,
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,7 @@ import { FaqComponent } from './pages/faq/faq.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PartnersComponent } from './pages/partners/partners.component';
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
+import { ThankYouComponent } from './pages/thank-you/thank-you.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'partners', component: PartnersComponent },
   { path: 'faq', component: FaqComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
+  { path: 'thank-you', component: ThankYouComponent },
 ];
 
 @NgModule({

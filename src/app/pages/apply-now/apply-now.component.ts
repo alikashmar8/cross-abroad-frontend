@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AlertService } from 'src/app/services/alert.service';
 import { ApplicationsService } from 'src/app/services/applications.service';
 import { AuthService } from 'src/app/services/auth.service';
@@ -28,7 +29,8 @@ export class ApplyNowComponent implements OnInit {
   constructor(
     private applicationsService: ApplicationsService,
     private alertService: AlertService,
-    private authService: AuthService
+    private authService: AuthService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {}
@@ -60,6 +62,7 @@ export class ApplyNowComponent implements OnInit {
         referencedBy: null,
       };
       this.isSending = false;
+      this.router.navigate(['/thank-you']);
       this.alertService.toastSuccess('Application sent successfully');
     } catch (err) {
       this.isSending = false;
