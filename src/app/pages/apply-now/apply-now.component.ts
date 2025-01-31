@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AlertService } from 'src/app/services/alert.service';
@@ -30,7 +31,8 @@ export class ApplyNowComponent implements OnInit {
     private applicationsService: ApplicationsService,
     private alertService: AlertService,
     private authService: AuthService,
-    private router: Router
+    private router: Router,
+    private http: HttpClient
   ) {}
 
   ngOnInit(): void {}
@@ -47,6 +49,17 @@ export class ApplyNowComponent implements OnInit {
       }
     }
 
+    this.http
+      .post('https://formspree.io/f/xanqjoqb', {
+        ...this.application,
+      })
+      .subscribe(() => {
+        this.alertService.toastSuccess('Application sent successfully');
+        this.router.navigate(['/thank-you']);
+        this.isSending = false;
+      });
+
+    return;
     try {
       await this.applicationsService.store(this.application);
       this.application = {
